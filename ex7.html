@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array</title>
+        <script>
+            function lessons() {
+            let les = new Array(); 
+            les[0] = "История"; //гум
+            les[1] = "Физика"; //точ
+            les[2] = "Физкультура"; //гум
+            les[3] = "Русский язык"; //гум
+            les[4] = "Английский язык"; //гум
+            les[5] = "Математика"; //точ
+            les[6] = "Литература"; //гум
+            les[7] = "Астрономия"; //точ
+            exactS = [les[1],les[5],les[7]]; //точные науки
+            humanitiesS = [les[0], les.slice(2,5), les[6]];
+            document.write(exactS + "<br>");
+            document.write(humanitiesS);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <script>
+            year = new Array("декабрь","январь","февраль",
+            "март","апрель","май","июнь","июль","август",
+            "сентябрь","октябрь","ноябрь");
+            summer = year.slice(6,9); //летние месяцы
+            document.write(summer + "<br>");
+            lessons();
+        </script>
+    </body>
+</html>
