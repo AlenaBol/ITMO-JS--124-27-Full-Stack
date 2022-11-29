@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex 6</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            th, td{
+                padding: 10px 20px;
+                border: 1px solid #000;
+            }
+        </style>    
+    </head>
+    <body id = "body">
+        <script>
+        let table = document.createElement("table");
+        let thead = document.createElement("thead");
+        let tbody = document.createElement("tbody");
+
+        table.appendChild(thead); //добавляет элемент к элементу
+        table.appendChild(tbody);
+
+        document.getElementById("body").appendChild(table);
+
+        //создаю стрроку с названием
+        let row$1 = document.createElement("tr");
+        let head$1 = document.createElement("th");
+        head$1.innerHTML = "Степень";
+        let head$2 = document.createElement("th");
+        head$2.innerHTML = "Результат";
+
+        row$1.appendChild(head$1);
+        row$1.appendChild(head$2);
+        thead.appendChild(row$1);
+
+      
+        // ввожу данные в функцию
+        function mainTableData (body1, body2){
+        let row$2 = document.createElement("tr");
+        let body$1 = document.createElement("td");
+        body$1.innerHTML = body1;
+        let body$2 = document.createElement("td");
+        body$2.innerHTML = body2;
+
+        row$2.appendChild(body$1);
+        row$2.appendChild(body$2);
+        tbody.appendChild(row$2);
+     
+         }
+
+        //  //ввожу данные через цикл while
+        //  let degree = 0;
+        //  while (degree <= 5) {
+        //     mainTableData (body1 = "2<sup>" + degree + "</sup>", body2 = " " + Math.pow(2, degree) + " ");
+        //     degree = degree + 1;
+        //  }
+
+         //ввожу данные через цикл for
+
+         for (let degree = 0; degree <= 5; degree++) {
+            mainTableData (body1 = "2<sup>" + degree + "</sup>", body2 = " " + Math.pow(2, degree) + " ");
+         }
+        </script>
+    </body>
+</html>
