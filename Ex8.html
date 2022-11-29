@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex 8</title>
+    </head>
+    <body>
+        Вариант первый по индексу. </br>
+       <script>
+        let BrawserName = navigator.userAgent;
+            if (BrawserName.indexOf("Trident") > -1) {
+                window.location.href = 'Ex1+.html';  
+            }
+            else {
+                window.location.href = 'Ex3+.html'   
+            };
+       </script>
+
+       Вариант второй по поиску в строке.
+        <!-- <script>
+        let BrawserName = navigator.userAgent.toLowerCase().match(/trident/i);
+            if (BrawserName) {
+                window.location.href = 'Ex1+.html';  
+            }
+            else {
+                window.location.href = 'Ex3+.html'   
+            };
+       </script> -->
+        </body>
+</html> 
