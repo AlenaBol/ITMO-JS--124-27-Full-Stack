@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ex 13</title>
+    </head>
+    <body>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+             src="https://cdn2.hexlet.io/store/derivatives/4aa834c7741fe4045ae3e5ecf6179654/fill_webp-850-400.webp"
+             width="320" height="160">
+        <script>
+            function bigImg(x) {
+                x.style.height = "320px";
+                x.style.width = "640px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "160px";
+                x.style.width = "320px";
+            }
+        </script>
+    </body>
+</html>
