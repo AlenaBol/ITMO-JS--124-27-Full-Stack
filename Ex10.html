@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex 10 window</title>
+    </head>
+    <body>
+        <h1>Создание нового окна</h1>
+        <hr>
+        <script>
+            document.write("<h4 onclick='seeMee()'>Щелкните на ссылке для получения справочной информации</h4>");
+
+            function seeMee(){
+                window.open("https://www.google.com/","","toolbar=no,scrollbars=yes,width=500, height=500, " +
+                    "resizable=yes, top=100, left=500");
+                }
+        </script>
+    </body>
+</html>
