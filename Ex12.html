@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex 12</title>
+        <script>
+            function question(){
+            question = confirm("Для загрузки документа требуется программа Acrobat");
+            }
+            click.onclick = question()
+        </script>
+        <script>
+        function colorchange(){
+            document.body.style.background = "red";
+        }
+        </script>
+    </head>
+    <body>
+
+        <p id="clicker"><a href = "/PDF_12+.pdf" onclick = "question()">ссылка на PDF файл</a></p>
+            
+        <p id="text2" onMouseover="colorchange()">наведи и измени фон 
+        на КРАСНЫЙ</p>
+        <style>
+            #text2{
+            display: inline-block;
+            }
+        </style>
+    </body>
+</html>
