@@ -10,35 +10,36 @@
             }
         </style>
         <script>
-            function letsTry() {
+            function doSend() {
+                let v = document.data.mail.indexOf("@", 1);
 
-                let v = document.data.name.indexOf("@")
-                if (document.data.name.value == "") {
-                    alert('Пожалуйста, введите имя')
-                    document.data.name.focus()
+                if (document.data.name.value === "") {
+                    alert('Пожалуйста, введите имя');
+                    document.data.name.focus();
                 }
-                if (document.data.password$1.value == "") {
-                    alert('Вы должны ввести пароль')
-                    document.data.password$1.focus()
+                else if (document.data.password$1.value === "") {
+                    alert('Вы должны ввести пароль');
+                    document.data.password$1.focus();
                 }
-                if (document.data.password$2.value == "") {
-                    alert('Вы должны подтвердить пароль')
-                    document.data.password$2.focus()
+                else if (document.data.password$2.value === "") {
+                    alert('Вы должны подтвердить пароль');
+                    document.data.password$2.focus();
                 }
-                if (document.data.comments.value == "") {
-                    alert('Сообщение должно содержать больше 10 символов')
-                    document.data.comments.focus()
+                else if (document.data.comments.value === "") {
+                    alert('Сообщение должно содержать больше 10 символов');
+                    document.data.comments.focus();
                 }
-                if (document.data.mail.value == "") {
-                    alert('Вы должны ввести e-mail')
-                    document.data.mail.focus()
+                else if (document.data.mail.value === "") {
+                    alert('Вы должны ввести e-mail');
+                    document.data.mail.focus();
                 }
-                if (v == -1) {
+                else if (v === -1) {
                     alert('Адрес e-mail указан неверно')
-                    document.data.mail.select()
-                    document.data.mail.focus()
-                } else{
-                    document.data.submit()
+                    document.data.mail.select();
+                    document.data.mail.focus();
+                }
+                else{
+                    document.data.submit();
                 }
             }
         </script>
@@ -83,7 +84,7 @@
 
             <p><span><sup>*</sup></span> - необходимые для заполнения поля</p>
 
-            <input type = "submit" name = "submit" value = "Отправить" onclick="letsTry()">
+            <input type = "submit" name = "submit" value = "Отправить" onclick="doSend()">
             <input type = "reset" name = "submit" value = "Очистить">
         </form>
     </body>
